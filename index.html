@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Blast</title>
+	<meta charset="utf-8">
+	<link rel="shortcut icon" href="media/images/icon.png" type="image/png">
+	<link rel="stylesheet" type="text/css" href="styles/style.css">
+</head>
+<body>
+
+	<div class="game">
+		<canvas id="canvas" class="canvas border-style"></canvas>
+		<div class="interface">
+			
+			<!-- ПРОЦЕСС -->
+			<!-- ПРОЦЕСС -->
+			<!-- ПРОЦЕСС -->
+			<div class="level" id="level">
+				<div class="statistic">
+					<div class="statistic-moves">
+						<div class="statistic-title">ХОДЫ</div>
+						<div class="statistic-moves-block">
+							<img src="media/images/interface/circle.png" class="circle">
+							<img src="media/images/interface/glare.png" class="glare">
+							<div class="statistic-text">
+								<span class="statistic-text-current" id="moves">8</span>
+								<span class="statistic-text-init" id="target-moves">9</span>
+							</div>
+						</div>
+					</div>
+					<div class="statistic-score">
+						<div class="statistic-title">ОЧКИ</div>
+						<div class="statistic-score-block">
+							<img src="media/images/interface/circle.png" class="circle">
+							<img src="media/images/interface/glare.png" class="glare">
+							<div class="statistic-text">
+								<span class="statistic-text-current" id="score">5</span>
+								<span class="statistic-text-init" id="target-score">60</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="progress">
+					<div class="progress-info">
+						<div class="progress-current-level" id="current-level">1</div>
+						<div class="progress-title">ПРОГРЕСС</div>
+						<div class="progress-next-level" id="next-level">2</div>
+					</div>
+					<div class="progress-bar">
+						<div class="progress-bar-fill" id="progress-fill"></div>
+					</div>
+				</div>
+				<div class="bonus">
+					<div class="bonus-title">БОНУСЫ</div>
+					<div class="bonus-item" id="button-bomb">
+						<div class="bonus-item-text">БУСТЕР БОМБА</div>
+						<img src="media/images/interface/glare.png" class="glare">
+					</div>
+				</div>
+			</div>
+
+			<!-- ПОБЕДА -->
+			<!-- ПОБЕДА -->
+			<!-- ПОБЕДА -->
+			<div class="win" id="win">
+				<div class="win-block border-style">
+					<div class="win-level" id="win-next-level">37</div>
+					<div class="win-request">
+						<div class="win-request-move">
+							<span class="win-request-move-title">ХОДОВ:</span>
+							<span class="win-request-move-move" id="level-target-moves">7</span>
+						</div>
+						<div class="win-request-score">
+							<span class="win-request-score-title">ОЧКОВ:</span>
+							<span class="win-request-score-score" id="level-target-score">334</span>
+						</div>
+					</div>
+				</div>
+				<div class="button-start" id="button-next">
+					<div class="button-start-text">НАЧАТЬ</div>
+					<img src="media/images/interface/glare.png" class="glare">
+				</div>
+			</div>
+
+			<!-- ПРОИГРЫШ -->
+			<!-- ПРОИГРЫШ -->
+			<!-- ПРОИГРЫШ -->
+			<div class="lose" id="lose">
+				<div class="lose-block border-style">
+					<div class="lose-level" id="lose-level">37</div>
+					<div class="lose-score">
+						<span class="lose-score-title">ОЧКИ:</span>
+						<span class="lose-score-score" id="lose-score">334</span>
+					</div>
+				</div>
+				<div class="button-restart" id="button-restart">
+					<div class="button-restart-text">ИГРАТЬ СНОВА</div>
+					<img src="media/images/interface/glare.png" class="glare">
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script type="module" src="main.js"></script>
+</body>
+</html>
